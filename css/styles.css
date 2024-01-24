@@ -17,11 +17,10 @@ h5 {
   margin-bottom: 0;
 }
 
-ul {
+ul, ol {
   list-style-type: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -31,20 +30,17 @@ img {
 .container {
   max-width: 1158px;
   width: 100%;
-  padding-left: 156px;
-  padding-right: 156px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
 .header-container{
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  align-items: center;
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -56,7 +52,6 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  margin-right: 332px;
 }
 
 
@@ -99,11 +94,13 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0 ;
+  display: block;
 
 }
 
 .address {
   font-style: normal;
+  margin-left: auto;
 
 }
 
@@ -195,13 +192,19 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  max-width: 264px;
 }
 
 .features-list {
   display: flex;
   gap: 24px;
-
 }
+
+
+.feature-items {
+  width: calc((100% - 72px) / 4);
+}
+
 .features-list-title {
   color: #2e2f42;
   font-size: 20px;
